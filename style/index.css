@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+#navbar{
+    background-color: cornflowerblue;
+    padding: 30px;
+    
+}
+#navbar a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    padding-right:40px ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    margin: 15px;
+}
+
+
+
+.image-box h2,h3{
+    text-align: center;
+    width: 300px;
+   
+}
+
+#parent{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+#parent div img{
+    object-fit: cover;
+    margin: auto;
+    width: 300px;
+}
+.image-box{
+    
+}

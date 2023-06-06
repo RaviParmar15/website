@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box1{
+    width: 20%;
+    height: 100vh;
+    border: 2px solid black;
+}
+.box1 p{
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding:15px;
+    border-bottom: 2px solid rgba(49, 48, 48, 0.87);
+}
+.box2{
+    width: 80%;
+    height: 100vh;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    overflow: auto;
+    
+}
+#parent div{
+    display: flex;
+}

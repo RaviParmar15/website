@@ -1,3 +1,4 @@
+import navbar from "../components/navbar.js";
 document.querySelector("form").addEventListener("submit", function (event) {
     event.preventDefault();
     let user = JSON.parse(localStorage.getItem("user"));
@@ -20,3 +21,5 @@ document.querySelector("form").addEventListener("submit", function (event) {
 
     }
 });
+document.getElementById("navbar").innerHTML=navbar();
+// console.log(navbar);

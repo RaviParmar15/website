@@ -32,16 +32,17 @@ const displya = (data) => {
             let cartitem = JSON.parse(localStorage.getItem("cartitem")) || [];
             let existing = false;
 
-            cartitem.map((item) => {
+            cartitem.map((item, idx) => {
                 if (item.id == Element.id) {
                     existing = true;
+                    cartitem[idx].qty += 1;
                 }
             });
-            if (existing) {
-                alert("Already added");
-            } else {
+            if (!existing) {
                 cartitem.push({ ...Element, qty: 1 });
-                alert("not found")
+                alert("product added");
+            } else {
+                
             }
 
 

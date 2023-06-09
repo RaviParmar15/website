@@ -1,53 +1,52 @@
-img{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 100%;
-    overflow: hidden;
-    border: 2px solid black;
-    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.car-ui{
+    width: 700px;
+    margin: auto;
+    border: 1px solid gray;
 }
 .img-box{
-    margin-left:auto;
-}
-.cart{
-    width: 50%;
-    padding: 20px;
-    margin: auto;
-    display: flex;
-    /* border: 2px solid gray; */
-    border-radius: 10px;
-    box-shadow: 0px 0px 8px gray;
-}
-.content-box{
-    display: flex;
-    margin-right: auto;
-    padding-top: 60px;
-}
-.content-box h1{
-    padding-left: 50px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 500;  
-}
-.content-box .plus,.minus{
-    background-color:cornflowerblue;
-    color: white;
-    border: 2px solid rgb(225, 225, 225);
-    padding: 10px;
-    border-radius: 100%;
-    font-size: 20px;
-}
- .content-box .qty{
-    margin: 0px 15px;
-    font-size: 23px;
-}
-.content-box p{
-    padding-left: 50px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin: 15px;
 
 }
-h3{
-    font-size: 25px;
-    text-align: center
+.img-box img{
+    width:100%;
 }
+.content-box{
+    margin: 25px 0;
+    border-left: 1px solid gray;
+    padding-left: 15px;
+}
+.content-box h1{
+    text-transform: capitalize;
+    padding:8px 0px;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.content-box p{
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.content-box span ,h4{
+    display: block;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding:10px 0px ;
+}
+.qty-box span{
+    display: inline;
+    padding:0px 10px;
+    font-size: 15px;
+}
+.plus,.minus{
+    border: 2px solid black;
+    border-radius: 10px;
+   
+}
+

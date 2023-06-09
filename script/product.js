@@ -1,5 +1,8 @@
 import navbar from "../components/navbar.js"
 
+document.getElementById("navbar").innerHTML = navbar();
+
+
 let data = async () => {
     let response = await fetch("https://dummyjson.com/products")
     let data = await response.json()
@@ -41,11 +44,7 @@ const displya = (data) => {
             if (!existing) {
                 cartitem.push({ ...Element, qty: 1 });
                 alert("product added");
-            } else {
-                
-            }
-
-
+            } 
 
             localStorage.setItem("cartitem", JSON.stringify(cartitem));
 
@@ -60,4 +59,3 @@ const displya = (data) => {
 
     });
 };
-document.getElementById("navbar").innerHTML = navbar();

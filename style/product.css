@@ -31,9 +31,14 @@
     height: 300px;
     object-fit: cover;
 
+
 }
+
 .box2 div{
     border: 2px solid black ;
+    height: 550px;
+    background-color:rgba(163, 163, 163, 0.159);
+
 }
 #parent-div{
     display: flex;

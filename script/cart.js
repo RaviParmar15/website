@@ -33,7 +33,8 @@ let cartui = (products) => {
         // document.getElementById("parent").append(div);
 
 
-        ui += `    <div class="car-ui d-flex">
+        ui += `      <div class="cart">
+          <div class="car-ui d-flex">
         <div class="img-box">
             <img src="${product.images[1]}" alt="">
         </div>
@@ -49,6 +50,8 @@ let cartui = (products) => {
             </div>
 
         </div>
+        </div>
+
     </div>`
 
 
@@ -61,8 +64,8 @@ cartui(cartitem);
 document.getElementById("parent").innerHTML = ui;
 
 let total = 0;
-cartitem.map((Element)=>{
-    total+=Element.price*Element.qty;
+cartitem.map((Element) => {
+    total += Element.price * Element.qty;
 })
 document.getElementById("total").innerHTML = `total price :  ${total}`;
 
